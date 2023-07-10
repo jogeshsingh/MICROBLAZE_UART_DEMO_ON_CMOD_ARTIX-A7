@@ -55,8 +55,29 @@ before getting started , make sure you are having the following the below requir
 
      ![block_automation_8](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e869e4b8-a2d9-445d-b0d2-143e8c2d3059)
 
+9.   set the following parameters as default.
 
- ![9](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/76ad967b-cc21-4856-8611-4461ca3af6bb)
+   ![9](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/76ad967b-cc21-4856-8611-4461ca3af6bb)
+
+ 10. Now drag USB UART and cell RAM .
+
+   ![10_uart_cell_ram](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/a6fbd575-51f6-45ca-9c43-140f213ac459)
+
+11.  "Run connection automation"
+
+  ![11_run_connection_automation](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e792664d-7849-42f8-b996-43f541e0b551)
+
+12. here's the final diagram created in block interface .
+
+     ![12_final](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/5fba99d6-a11c-4bb6-952d-a86fcbfe019d)
+
+ 13. Now save the block diagram    
+     file -> save_block_design
+
+     ![13_save_bd](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/a74cfef5-06de-4354-83dd-7b4c4fc16ea6)
+
+    
+      
 
    
    
