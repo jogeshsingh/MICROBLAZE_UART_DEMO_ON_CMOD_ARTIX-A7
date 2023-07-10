@@ -35,6 +35,8 @@ before getting started , make sure you are having the following the below requir
 
 5. Now , if you do not see the board file section , then click on window , then click-on-boards
    you'll then be able to see the all board tab .
+
+
    
    ![5](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/5184c8eb-0c50-443a-a04a-84daac505da8)
 
