@@ -1,0 +1,3 @@
+# MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7
+This Project includes step-by-step guide for running a uart demo on the Microblaze soft core processor from AMD(Xilinx) on CMOD ARTIX-A7 FPGA .
+Let's get started ...
