@@ -25,6 +25,7 @@ before getting started , make sure you are having the following the below requir
 ![2](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e898d763-95b6-4ac7-8469-0e35469d7924)
 
 3. Click Finish
+
    ![3](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/94382b1b-4e58-4938-925b-d064290aa3cd)
 
 4.click on -- " create bock design in IP integrator section"
