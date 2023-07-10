@@ -10,3 +10,25 @@ before getting started , make sure you are having the following the below requir
   if you are done all of the those , then let's go ahead .... 
 
 1. Launch VIVADO
+   give a suitable name to project ..
+   
+![01](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/325a7fe1-4f17-4051-820b-4de77aa4c2ff)
+
+
+2. In next step , make sure you have board files installed , you just have to copy the
+    files from repository , and paste in --: E:\VITIS_2020.2\Vivado\2022.2\data\boards\board_files
+    in some case there would not be board_files folder , so you may create the same for that.
+   Now select your FPGA board , in my case -- it's CMOD-ARTIX_A735T
+   
+![2](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e898d763-95b6-4ac7-8469-0e35469d7924)
+
+3. Click Finish
+   ![3](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/94382b1b-4e58-4938-925b-d064290aa3cd)
+
+4.click on -- " create bock design in IP integrator section"
+  give a name to this one as well.
+  
+  ![4](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/6eb0fe07-8c3c-493a-a199-14119561180a)
+
+
+   
