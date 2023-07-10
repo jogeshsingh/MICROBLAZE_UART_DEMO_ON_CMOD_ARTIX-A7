@@ -40,3 +40,25 @@ before getting started , make sure you are having the following the below requir
    
    ![5](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/5184c8eb-0c50-443a-a04a-84daac505da8)
 
+6. drag the clock wizard from board section --to block interface
+
+  ![clock_6](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/6ca0dd16-c3e5-4a18-a9d4-30711ffee793)
+
+
+7. click on " + " sign in board interface , then write microblaze , select the microblaze by
+   double-click .
+
+   ![microblaze7](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/93f11589-6d8a-42a8-a3a2-44c2a3ab8056)
+
+ 8. Now  , you'd be able to see the microblaze soft core IP in block interface ,
+     "run block automation"
+
+     ![block_automation_8](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e869e4b8-a2d9-445d-b0d2-143e8c2d3059)
+
+
+ ![9](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/76ad967b-cc21-4856-8611-4461ca3af6bb)
+
+   
+   
+
+
