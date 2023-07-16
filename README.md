@@ -12,7 +12,7 @@ before getting started , make sure you are having the following the below requir
 1. Launch VIVADO
    give a suitable name to project ..
    
-![01](./Img./01.jpg)
+![01](./01.jpg)
 
 
 2. In next step , make sure you have board files installed , you just have to copy the
