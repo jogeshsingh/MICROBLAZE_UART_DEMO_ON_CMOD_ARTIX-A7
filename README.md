@@ -130,11 +130,11 @@ before getting started , make sure you are having the following the below requir
       ![09](./09.jpg)
     
      
- 11.  Now give a name to your application project
+ 9. Click next 
 
    ![10](./10.jpg)
 
-11.   click -NEXT
+11. Now give a name to your application project
 
    ![11](./11.jpg)
    
