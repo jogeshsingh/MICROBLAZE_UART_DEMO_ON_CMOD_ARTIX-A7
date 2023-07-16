@@ -142,19 +142,20 @@ before getting started , make sure you are having the following the below requir
   
   ![12](./12.jpg)
 
+   ![13](./13.jpg)
+
 #   Now make sure you connect your respective fpga board with laptop.
  
  13.  click on xilinx tab -- then program device
   
-      ![13](./13.jpg)
+     
+   ![14](./14.jpg)
     
 14. Before proceeding to next step , make sure your uart termimal is open (I am using
     Tera-Term---- and had used --9600 bps while in creating block design) ..
    
 15. By now , your device is programmed ....
     now , right-click on your application project (on left section --including written as standalone-microblaze)
-
-   ![14](./14.jpg)
 
     
  15.  run as --> 1 Launch Hardware . 
