@@ -12,7 +12,7 @@ before getting started , make sure you are having the following the below requir
 1. Launch VIVADO
    give a suitable name to project ..
    
-![01](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/325a7fe1-4f17-4051-820b-4de77aa4c2ff)
+![01](01.jpg)
 
 
 2. In next step , make sure you have board files installed , you just have to copy the
