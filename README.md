@@ -155,7 +155,8 @@ before getting started , make sure you are having the following the below requir
     Tera-Term---- and had used --9600 bps while in creating block design) ..
    
 15. By now , your device is programmed ....
-    now , right-click on your application project (on left section --including written as standalone-microblaze)
+    now , right-click on your application project (on left section --including written as standalone-microblaze in my case Just down to
+    Cmod_A7_hello_system)
 
     
  15.  run as --> 1 Launch Hardware . 
