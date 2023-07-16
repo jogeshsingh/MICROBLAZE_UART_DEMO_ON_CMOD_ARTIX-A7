@@ -119,7 +119,7 @@ before getting started , make sure you are having the following the below requir
 
        ![06](./06.jpg)
 
-  7.   Now-right-click on the platform project (indicated in green color)
+  7.   Now-right-click on the platform project (indicated in green color))
        click on build project
        ![07](./07.jpg)
 
