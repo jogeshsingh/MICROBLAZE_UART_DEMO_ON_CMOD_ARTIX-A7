@@ -158,14 +158,16 @@ before getting started , make sure you are having the following the below requir
     now , right-click on your application project (on left section --including written as standalone-microblaze in my case Just down to
     Cmod_A7_hello_system)
 
+       ![15](./15.jpg)
     
  15.  run as --> 1 Launch Hardware . 
 
-      ![15](./15.jpg)
-
+        ![16](./16.jpg)
+      
   16 . wait unless it's loaded the bitstream into the fpga. Here's what you get on UART terminal according to what was written in hello world program .
-
-   ![16](./16.jpg)
+      
+   ![17](./17.jpg)
+ 
            
     
  
