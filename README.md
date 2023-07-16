@@ -53,7 +53,7 @@ before getting started , make sure you are having the following the below requir
  8. Now  , you'd be able to see the microblaze soft core IP in block interface ,
      "run block automation"
 
-     ![block_automation_8](./block_autommation_8.jpg)
+     ![block_automation_8](./block_automation_8.jpg)
 
 9.   set the following parameters as default.
 
