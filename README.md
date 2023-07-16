@@ -31,7 +31,7 @@ before getting started , make sure you are having the following the below requir
 4.click on -- "" create bock design in IP integrator section""
   give a name to this one as well.
   
-  ![4](./4,jpg)
+  ![4](./4.jpg)
 
 5. Now , if you do not see the board file section , then click on window , then click-on-boards
    you'll then be able to see the all board tab .
