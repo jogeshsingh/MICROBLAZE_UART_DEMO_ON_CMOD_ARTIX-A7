@@ -76,8 +76,19 @@ before getting started , make sure you are having the following the below requir
 
      ![13_save_bd](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/a74cfef5-06de-4354-83dd-7b4c4fc16ea6)
 
+ 14. Now Export Hardware--including bitstream
+          
+      ![export_hardware](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/9287ee0d-dbb6-4603-bd69-11b48a274b23)
+
+      ![include_bitstream](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/f7a19716-4cea-49ac-b1cf-da72f262fa5a)
+
+15. Remember to save this XSA FILE --in location--you'd be able to remember later
+
+      ![XSA_FILE_LOCATION](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/b77375a9-a049-4076-aadb-73c8cd373ec9)
+
+ # Now Let's move to VITIS
+ 
     
-      
 
    
    
