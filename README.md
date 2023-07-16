@@ -96,49 +96,76 @@ before getting started , make sure you are having the following the below requir
 
   1. start the workspace , give a name and location for that..
 
+      ![011](./011.jpg)
+
   2. Create a platform project
 
+     ![02](./02.jpg)
+     
   3. give a name to platform project
+
+       ![03](./03.jpg)
 
   4. Now ,if you remember the location and name of the XSA file then it's the time to use that
      in  this step..
 
+      ![04](./04.jpg)
 
   5.  Select OS as "Standalone" and Processor "Microblaze"
 
+      ![05](./05.jpg)
+      
   6.  Here new window will pop-up
+
+       ![06](./06.jpg)
 
   7.   Now-right-click on the platform project (indicated in green color)
        click on build project
+       ![07](./07.jpg)
 
  8. Now the build is finished , then click on file->application project
 
+     ![08](./08.jpg)
+    
  9.  Select your platform project which you're currently working on (you already may have
       created by now from previous steps)
 
-
+     [09](./09.jpg)
+     
  10.  Now give a name to your application project
+
+   ![10](./10.jpg)
 
 11.   click -NEXT
 
+   ![11](./11.jpg)
+   
 12.   choose hello world template
+  
+  ![12](./12.jpg)
 
-13.   Now make sure you connect your respective fpga board with laptop.
-      click on xilinx tab -- then program device
-
+#   Now make sure you connect your respective fpga board with laptop.
+ 
+ 13.  click on xilinx tab -- then program device
+  
+      ![13](./13.jpg)
+    
 14. Before proceeding to next step , make sure your uart termimal is open (I am using
     Tera-Term---- and had used --9600 bps while in creating block design) ..
    
 15. By now , your device is programmed ....
     now , right-click on your application project (on left section --including written as standalone-microblaze)
 
+   ![14](./14.jpg)
 
     
- 16.  run as --> 1 Launch Hardware . 
-        
+ 15.  run as --> 1 Launch Hardware . 
 
-  17. wait unless it's loaded the bitstream into the fpga. Here's what you get on UART terminal according to what was written in hello world program .
+      ![15](./15.jpg)
 
+  16 . wait unless it's loaded the bitstream into the fpga. Here's what you get on UART terminal according to what was written in hello world program .
+
+   ![16](./16.jpg)
            
     
  
