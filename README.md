@@ -71,6 +71,10 @@ before getting started , make sure you are having the following the below requir
 
      ![12_final](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/5fba99d6-a11c-4bb6-952d-a86fcbfe019d)
 
+   # IMPLEMENTED DESIGN
+    
+     ![implemented_design_2](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/556bfd92-d4e3-4eaa-aca8-bf43ab72f3d6)
+
  13. Now save the block diagram    
      file -> save_block_design
 
