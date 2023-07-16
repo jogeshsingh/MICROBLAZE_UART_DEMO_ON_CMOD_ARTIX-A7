@@ -125,14 +125,15 @@ before getting started , make sure you are having the following the below requir
 
  8. Now the build is finished , then click on file->application project
 
-     ![08](./08.jpg)
+    ![08](./08.jpg)
     
  9.  Select your platform project which you're currently working on (you already may have
       created by now from previous steps)
 
-     [09](./09.jpg)
+      ![09](./09.jpg)
+    
      
- 10.  Now give a name to your application project
+ 11.  Now give a name to your application project
 
    ![10](./10.jpg)
 
