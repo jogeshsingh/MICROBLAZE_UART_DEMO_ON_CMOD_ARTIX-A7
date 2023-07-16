@@ -22,73 +22,73 @@ before getting started , make sure you are having the following the below requir
    in some case there would not be board_files folder , so you may create the same for that.
    Now select your FPGA board , in my case -- it's CMOD-ARTIX_A735T
    
-![2](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e898d763-95b6-4ac7-8469-0e35469d7924)
+![2](./2.jpg)
 
 3. Click Finish
 
-   ![3](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/94382b1b-4e58-4938-925b-d064290aa3cd)
+   ![3](./3.jpg)
 
 4.click on -- "" create bock design in IP integrator section""
   give a name to this one as well.
   
-  ![4](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/6eb0fe07-8c3c-493a-a199-14119561180a)
+  ![4](./4,jpg)
 
 5. Now , if you do not see the board file section , then click on window , then click-on-boards
    you'll then be able to see the all board tab .
 
 
    
-   ![5](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/5184c8eb-0c50-443a-a04a-84daac505da8)
+   ![5](./5.jpg)
 
 6. drag the clock wizard from board section --to block interface
 
-  ![clock_6](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/6ca0dd16-c3e5-4a18-a9d4-30711ffee793)
+  ![clock_6](./clock_6.jpg)
 
 
 7. click on " + " sign in board interface , then write microblaze , select the microblaze by
    double-click .
 
-   ![microblaze7](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/93f11589-6d8a-42a8-a3a2-44c2a3ab8056)
+   ![microblaze7](./microblaze7.jpg)
 
  8. Now  , you'd be able to see the microblaze soft core IP in block interface ,
      "run block automation"
 
-     ![block_automation_8](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e869e4b8-a2d9-445d-b0d2-143e8c2d3059)
+     ![block_automation_8](./block_autommation_8.jpg)
 
 9.   set the following parameters as default.
 
-   ![9](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/76ad967b-cc21-4856-8611-4461ca3af6bb)
+   ![9](./9.jpg)
 
  10. Now drag USB UART and cell RAM .
 
-   ![10_uart_cell_ram](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/a6fbd575-51f6-45ca-9c43-140f213ac459)
+   ![10_uart_cell_ram](./10_uart_cell_ram.jpg)
 
 11.  "Run connection automation"
 
-  ![11_run_connection_automation](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/e792664d-7849-42f8-b996-43f541e0b551)
+  ![11_run_connection_automation](./11_run_connection_automation.jpg)
 
 12. here's the final diagram created in block interface .
 
-     ![12_final](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/5fba99d6-a11c-4bb6-952d-a86fcbfe019d)
+     ![12_final](./12_final.jpg)
 
    # IMPLEMENTED DESIGN
     
-     ![implemented_design_2](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/556bfd92-d4e3-4eaa-aca8-bf43ab72f3d6)
+   ![implemented_design_2](./implemented_design_2.jpg)
 
  13. Now save the block diagram    
      file -> save_block_design
 
-     ![13_save_bd](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/a74cfef5-06de-4354-83dd-7b4c4fc16ea6)
+     ![13_save_bd](./13_save_bd.jpg)
 
  14. Now Export Hardware--including bitstream
           
-      ![export_hardware](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/9287ee0d-dbb6-4603-bd69-11b48a274b23)
+      ![export_hardware](./export_hardware.jpg)
 
-      ![include_bitstream](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/f7a19716-4cea-49ac-b1cf-da72f262fa5a)
+      ![include_bitstream](./include_bitstream.jpg)
 
 15. Remember to save this XSA FILE --in location--you'd be able to remember later
 
-      ![XSA_FILE_LOCATION](https://github.com/jogeshsingh/MICROBLAZE_UART_DEMO_ON_CMOD_ARTIX-A7/assets/98607828/b77375a9-a049-4076-aadb-73c8cd373ec9)
+      ![XSA_FILE_LOCATION](./XSA_FILE_LOCATION.jpg)
 
  # Now Let's move to VITIS
  
