@@ -91,6 +91,56 @@ before getting started , make sure you are having the following the below requir
       ![XSA_FILE_LOCATION](./XSA_FILE_LOCATION.jpg)
 
  # Now Let's move to VITIS
+
+  open the VITIS software ...
+
+  1. start the workspace , give a name and location for that..
+
+  2. Create a platform project
+
+  3. give a name to platform project
+
+  4. Now ,if you remember the location and name of the XSA file then it's the time to use that
+     in  this step..
+
+
+  5.  Select OS as "Standalone" and Processor "Microblaze"
+
+  6.  Here new window will pop-up
+
+  7.   Now-right-click on the platform project (indicated in green color)
+       click on build project
+
+ 8. Now the build is finished , then click on file->application project
+
+ 9.  Select your platform project which you're currently working on (you already may have
+      created by now from previous steps)
+
+
+ 10.  Now give a name to your application project
+
+11.   click -NEXT
+
+12.   choose hello world template
+
+13.   Now make sure you connect your respective fpga board with laptop.
+      click on xilinx tab -- then program device
+
+14. Before proceeding to next step , make sure your uart termimal is open (I am using
+    Tera-Term---- and had used --9600 bps while in creating block design) ..
+   
+15. By now , your device is programmed ....
+    now , right-click on your application project (on left section --including written as standalone-microblaze)
+
+
+    
+ 16.  run as --> 1 Launch Hardware . 
+        
+
+  17. wait unless it's loaded the bitstream into the fpga. Here's what you get on UART terminal according to what was written in hello world program .
+
+           
+    
  
     
 
