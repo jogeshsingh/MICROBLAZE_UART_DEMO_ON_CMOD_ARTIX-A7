@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jul  2 14:23:47 2023
+# Process ID: 1852
+# Current directory: E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_dlmb_bram_if_cntlr_0_synth_1
+# Command line: vivado.exe -log design_1_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_bram_if_cntlr_0.tcl
+# Log file: E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.vds
+# Journal file: E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
+# Running On: LAPTOP-GBNTDCHP, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 2, Host memory: 12791 MB
+#-----------------------------------------------------------
+source design_1_dlmb_bram_if_cntlr_0.tcl -notrace

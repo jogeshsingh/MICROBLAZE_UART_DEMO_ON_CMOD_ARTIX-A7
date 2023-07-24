@@ -1,0 +1,946 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jul  2 14:25:47 2023
+# Process ID: 8352
+# Current directory: E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_axi_emc_0_0_synth_1
+# Command line: vivado.exe -log design_1_axi_emc_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_emc_0_0.tcl
+# Log file: E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_axi_emc_0_0_synth_1/design_1_axi_emc_0_0.vds
+# Journal file: E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_axi_emc_0_0_synth_1\vivado.jou
+# Running On: LAPTOP-GBNTDCHP, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 2, Host memory: 12791 MB
+#-----------------------------------------------------------
+source design_1_axi_emc_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 448.922 ; gain = 119.602
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_emc_0_0
+Command: synth_design -top design_1_axi_emc_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9036
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/VITIS_2020.2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1264.648 ; gain = 407.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_emc_0_0' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/synth/design_1_axi_emc_0_0.vhd:115]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_INSTANCE bound to: axi_emc_inst - type: string 
+	Parameter C_AXI_CLK_PERIOD_PS bound to: 10000 - type: integer 
+	Parameter C_LFLASH_PERIOD_PS bound to: 10000 - type: integer 
+	Parameter C_LINEAR_FLASH_SYNC_BURST bound to: 0 - type: integer 
+	Parameter C_USE_STARTUP bound to: 0 - type: integer 
+	Parameter C_PORT_DIFF bound to: 0 - type: integer 
+	Parameter C_S_AXI_REG_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_REG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_EN_REG bound to: 0 - type: integer 
+	Parameter C_S_AXI_MEM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MEM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MEM_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_MEM0_BASEADDR bound to: 32'b01100000000000000000000000000000 
+	Parameter C_S_AXI_MEM0_HIGHADDR bound to: 32'b01100001111111111111111111111111 
+	Parameter C_S_AXI_MEM1_BASEADDR bound to: 32'b10110000000000000000000000000000 
+	Parameter C_S_AXI_MEM1_HIGHADDR bound to: 32'b10111111111111111111111111111111 
+	Parameter C_S_AXI_MEM2_BASEADDR bound to: 32'b11000000000000000000000000000000 
+	Parameter C_S_AXI_MEM2_HIGHADDR bound to: 32'b11001111111111111111111111111111 
+	Parameter C_S_AXI_MEM3_BASEADDR bound to: 32'b11010000000000000000000000000000 
+	Parameter C_S_AXI_MEM3_HIGHADDR bound to: 32'b11011111111111111111111111111111 
+	Parameter C_INCLUDE_NEGEDGE_IOREGS bound to: 0 - type: integer 
+	Parameter C_NUM_BANKS_MEM bound to: 1 - type: integer 
+	Parameter C_MEM0_TYPE bound to: 1 - type: integer 
+	Parameter C_MEM1_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM2_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM3_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM0_WIDTH bound to: 8 - type: integer 
+	Parameter C_MEM1_WIDTH bound to: 16 - type: integer 
+	Parameter C_MEM2_WIDTH bound to: 16 - type: integer 
+	Parameter C_MEM3_WIDTH bound to: 16 - type: integer 
+	Parameter C_MAX_MEM_WIDTH bound to: 8 - type: integer 
+	Parameter C_PAGE_SIZE bound to: 16 - type: integer 
+	Parameter C_MEM_A_MSB bound to: 31 - type: integer 
+	Parameter C_MEM_A_LSB bound to: 0 - type: integer 
+	Parameter C_PARITY_TYPE_MEM_0 bound to: 0 - type: integer 
+	Parameter C_PARITY_TYPE_MEM_1 bound to: 0 - type: integer 
+	Parameter C_PARITY_TYPE_MEM_2 bound to: 0 - type: integer 
+	Parameter C_PARITY_TYPE_MEM_3 bound to: 0 - type: integer 
+	Parameter C_INCLUDE_DATAWIDTH_MATCHING_0 bound to: 1 - type: integer 
+	Parameter C_INCLUDE_DATAWIDTH_MATCHING_1 bound to: 1 - type: integer 
+	Parameter C_INCLUDE_DATAWIDTH_MATCHING_2 bound to: 1 - type: integer 
+	Parameter C_INCLUDE_DATAWIDTH_MATCHING_3 bound to: 1 - type: integer 
+	Parameter C_SYNCH_PIPEDELAY_0 bound to: 1 - type: integer 
+	Parameter C_TCEDV_PS_MEM_0 bound to: 8000 - type: integer 
+	Parameter C_TAVDV_PS_MEM_0 bound to: 8000 - type: integer 
+	Parameter C_TPACC_PS_FLASH_0 bound to: 25000 - type: integer 
+	Parameter C_THZCE_PS_MEM_0 bound to: 8000 - type: integer 
+	Parameter C_THZOE_PS_MEM_0 bound to: 8000 - type: integer 
+	Parameter C_TWC_PS_MEM_0 bound to: 8000 - type: integer 
+	Parameter C_TWP_PS_MEM_0 bound to: 8000 - type: integer 
+	Parameter C_TWPH_PS_MEM_0 bound to: 12000 - type: integer 
+	Parameter C_TLZWE_PS_MEM_0 bound to: 3000 - type: integer 
+	Parameter C_WR_REC_TIME_MEM_0 bound to: 27000 - type: integer 
+	Parameter C_SYNCH_PIPEDELAY_1 bound to: 1 - type: integer 
+	Parameter C_TCEDV_PS_MEM_1 bound to: 15000 - type: integer 
+	Parameter C_TAVDV_PS_MEM_1 bound to: 15000 - type: integer 
+	Parameter C_TPACC_PS_FLASH_1 bound to: 25000 - type: integer 
+	Parameter C_THZCE_PS_MEM_1 bound to: 7000 - type: integer 
+	Parameter C_THZOE_PS_MEM_1 bound to: 7000 - type: integer 
+	Parameter C_TWC_PS_MEM_1 bound to: 15000 - type: integer 
+	Parameter C_TWP_PS_MEM_1 bound to: 12000 - type: integer 
+	Parameter C_TWPH_PS_MEM_1 bound to: 12000 - type: integer 
+	Parameter C_TLZWE_PS_MEM_1 bound to: 0 - type: integer 
+	Parameter C_WR_REC_TIME_MEM_1 bound to: 27000 - type: integer 
+	Parameter C_SYNCH_PIPEDELAY_2 bound to: 1 - type: integer 
+	Parameter C_TCEDV_PS_MEM_2 bound to: 15000 - type: integer 
+	Parameter C_TAVDV_PS_MEM_2 bound to: 15000 - type: integer 
+	Parameter C_TPACC_PS_FLASH_2 bound to: 25000 - type: integer 
+	Parameter C_THZCE_PS_MEM_2 bound to: 7000 - type: integer 
+	Parameter C_THZOE_PS_MEM_2 bound to: 7000 - type: integer 
+	Parameter C_TWC_PS_MEM_2 bound to: 15000 - type: integer 
+	Parameter C_TWP_PS_MEM_2 bound to: 12000 - type: integer 
+	Parameter C_TWPH_PS_MEM_2 bound to: 12000 - type: integer 
+	Parameter C_TLZWE_PS_MEM_2 bound to: 0 - type: integer 
+	Parameter C_WR_REC_TIME_MEM_2 bound to: 27000 - type: integer 
+	Parameter C_SYNCH_PIPEDELAY_3 bound to: 1 - type: integer 
+	Parameter C_TCEDV_PS_MEM_3 bound to: 15000 - type: integer 
+	Parameter C_TAVDV_PS_MEM_3 bound to: 15000 - type: integer 
+	Parameter C_TPACC_PS_FLASH_3 bound to: 25000 - type: integer 
+	Parameter C_THZCE_PS_MEM_3 bound to: 7000 - type: integer 
+	Parameter C_THZOE_PS_MEM_3 bound to: 7000 - type: integer 
+	Parameter C_TWC_PS_MEM_3 bound to: 15000 - type: integer 
+	Parameter C_TWP_PS_MEM_3 bound to: 12000 - type: integer 
+	Parameter C_TWPH_PS_MEM_3 bound to: 12000 - type: integer 
+	Parameter C_TLZWE_PS_MEM_3 bound to: 0 - type: integer 
+	Parameter C_WR_REC_TIME_MEM_3 bound to: 27000 - type: integer 
+INFO: [Synth 8-3491] module 'axi_emc' declared at 'e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:3428' bound to instance 'U0' of component 'axi_emc' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/synth/design_1_axi_emc_0_0.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'axi_emc' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:3738]
+INFO: [Synth 8-638] synthesizing module 'axi_emc_native_interface' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:1827]
+INFO: [Synth 8-638] synthesizing module 'axi_emc_addr_gen' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:614]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc_addr_gen' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:614]
+INFO: [Synth 8-638] synthesizing module 'axi_emc_address_decode' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:1250]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc_address_decode' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:1250]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc_native_interface' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:1827]
+INFO: [Synth 8-638] synthesizing module 'EMC' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:8233]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:580]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-6157] synthesizing module 'MULT_AND' [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794]
+INFO: [Synth 8-6155] done synthesizing module 'MULT_AND' (0#1) [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY' [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (0#1) [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:580]
+INFO: [Synth 8-638] synthesizing module 'mem_state_machine' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-113] binding component instance 'READ_COMPLETE_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3114]
+INFO: [Synth 8-256] done synthesizing module 'mem_state_machine' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-638] synthesizing module 'addr_counter_mux' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4461]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'ADDRESS_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4556]
+INFO: [Synth 8-113] binding component instance 'BEN_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4573]
+INFO: [Synth 8-113] binding component instance 'BEN_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4573]
+INFO: [Synth 8-113] binding component instance 'BEN_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4573]
+INFO: [Synth 8-113] binding component instance 'BEN_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4573]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized0' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized0' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'addr_counter_mux' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4461]
+INFO: [Synth 8-638] synthesizing module 'counters' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:1669]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized1' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (0#1) [E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized1' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized2' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_i1' of component 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:318]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized2' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized3' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Synth 8-3491] module 'FDSE' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844' bound to instance 'FDSE_i1' of component 'FDSE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82794' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:281]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82805' bound to instance 'MUXCY_i1' of component 'MUXCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:291]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'E:/VITIS_2020.2/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_i1' of component 'XORCY' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:302]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized3' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'counters' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:1669]
+INFO: [Synth 8-638] synthesizing module 'select_param' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3633]
+INFO: [Synth 8-256] done synthesizing module 'select_param' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3633]
+INFO: [Synth 8-638] synthesizing module 'mem_steer' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:5345]
+INFO: [Synth 8-113] binding component instance 'RDACK_PIPE_ASYNC' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6024]
+INFO: [Synth 8-113] binding component instance 'RDACK_PIPE_ASYNC' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6024]
+INFO: [Synth 8-113] binding component instance 'AALIGN_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6087]
+INFO: [Synth 8-113] binding component instance 'AALIGN_PIPE' to cell 'FDR' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6087]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'WRDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6111]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Synth 8-113] binding component instance 'RDDATA_REG' to cell 'FDRE' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:7120]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'mem_steer' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:5345]
+INFO: [Synth 8-638] synthesizing module 'io_registers' [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:1226]
+INFO: [Synth 8-256] done synthesizing module 'io_registers' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:1226]
+INFO: [Synth 8-256] done synthesizing module 'EMC' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:8233]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:3738]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_emc_0_0' (0#1) [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/synth/design_1_axi_emc_0_0.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element last_rd_data_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:2434]
+WARNING: [Synth 8-6014] Unused sequential element single_transfer_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:2452]
+WARNING: [Synth 8-6014] Unused sequential element bus2ip_mem_cs_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:668]
+WARNING: [Synth 8-6014] Unused sequential element pr_state_wait_temp_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:669]
+WARNING: [Synth 8-6014] Unused sequential element mem_cen_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3179]
+WARNING: [Synth 8-6014] Unused sequential element mem_oen_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3180]
+WARNING: [Synth 8-6014] Unused sequential element mem_wen_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3181]
+WARNING: [Synth 8-6014] Unused sequential element addr_cnt_ce_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3208]
+WARNING: [Synth 8-6014] Unused sequential element addr_cnt_rst_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3209]
+WARNING: [Synth 8-6014] Unused sequential element Bus2IP_RdReq_d2_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3258]
+WARNING: [Synth 8-6014] Unused sequential element last_addr1_d1_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3304]
+WARNING: [Synth 8-6014] Unused sequential element last_addr1_d2_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3305]
+WARNING: [Synth 8-6014] Unused sequential element last_addr1_d3_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:3306]
+WARNING: [Synth 8-3848] Net addressData_strobe_cmb in module/entity mem_state_machine does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:2238]
+WARNING: [Synth 8-3848] Net Addr_align in module/entity addr_counter_mux does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4436]
+WARNING: [Synth 8-3848] Net par_error_addr in module/entity addr_counter_mux does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:4444]
+WARNING: [Synth 8-6014] Unused sequential element mem_dqt_parity_t_d_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:6961]
+WARNING: [Synth 8-3848] Net write_data_parity_cmb in module/entity mem_steer does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:5368]
+WARNING: [Synth 8-3848] Net MemSteer_Mem_DQ_prty_T in module/entity mem_steer does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/ea80/hdl/emc_common_v3_0_vh_rfs.vhd:5305]
+WARNING: [Synth 8-6014] Unused sequential element mem_wait_io_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:4262]
+WARNING: [Synth 8-6014] Unused sequential element or_reduced_rdce_d1_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:6329]
+WARNING: [Synth 8-6014] Unused sequential element bus2ip_wrreq_reg_reg was removed.  [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:6330]
+WARNING: [Synth 8-3848] Net cfgclk in module/entity axi_emc does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:3668]
+WARNING: [Synth 8-3848] Net cfgmclk in module/entity axi_emc does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:3669]
+WARNING: [Synth 8-3848] Net eos in module/entity axi_emc does not have driver. [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ipshared/e866/hdl/axi_emc_v3_0_vh_rfs.vhd:3670]
+WARNING: [Synth 8-7129] Port MemSteer_Mem_DQ_prty_O[0] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemSteer_Mem_DQ_prty_T[0] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Mem_CS[0] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Burst in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Write_req_ack in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Synch_mem in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Two_pipe_delay in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Parity_enable in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Parity_type in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_align in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemSteer_Mem_DQ_prty_I[0] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdReq_emc in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_strobe_c in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port be_strobe_c in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stop_oen in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arsize[2] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arsize[1] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arsize[0] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_trans_size_reg[0] in module mem_steer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Mem_CS[0] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[0] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[1] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[2] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[3] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[4] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[5] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[6] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[7] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[8] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[9] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[10] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[11] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[12] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[13] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[14] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[15] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[16] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[17] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[18] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[19] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[20] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[21] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[22] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[23] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[24] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[25] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[26] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[27] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[28] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[29] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[30] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Addr[31] in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Clk in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Reset in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RNW in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psram_page_mode in module select_param is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_align in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[0] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[1] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[2] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[3] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[4] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[5] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[6] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[7] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[8] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[9] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[10] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[11] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[12] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[13] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[14] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[15] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[16] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[17] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[18] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[19] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[20] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[21] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[22] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[23] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[24] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[25] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[26] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[27] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[28] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[29] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[30] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port par_error_addr[31] in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_strobe in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2Mem_CS in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CS_par_addr in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_strobe_c in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psram_page_mode in module addr_counter_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_strobe in module mem_state_machine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Burst in module mem_state_machine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port original_wrce in module mem_state_machine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RNW in module ipic_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdReq_emc in module ipic_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrReq_emc in module ipic_if is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1398.449 ; gain = 541.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1398.449 ; gain = 541.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1398.449 ; gain = 541.297
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.284 . Memory (MB): peak = 1398.449 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0_ooc.xdc]
+Finished Parsing XDC File [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0_ooc.xdc]
+Parsing XDC File [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0_board.xdc]
+Finished Parsing XDC File [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0_board.xdc]
+Parsing XDC File [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc]
+Finished Parsing XDC File [e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1502.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 79 instances were transformed.
+  FDR => FDRE: 15 instances
+  MULT_AND => LUT2: 64 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.309 . Memory (MB): peak = 1503.797 ; gain = 0.980
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/VITIS_2020.2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IOB = TRUE for U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg. (constraint file  e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc, line 48).
+Applied set_property IOB = TRUE for U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg. (constraint file  e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc, line 49).
+Applied set_property IOB = TRUE for U0/EMC_CTRL_I/IO_REGISTERS_I/\mem_cen_reg_reg[0] . (constraint file  e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc, line 50).
+Applied set_property IOB = TRUE for U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg. (constraint file  e:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.gen/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc, line 52).
+Applied set_property KEEP = true for U0/mem_a[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_CEN[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_T[7]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_OEN[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for U0/EMC_CTRL_I/IO_REGISTERS_I/mem_wen_reg. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'emc_addr_ps_reg' in module 'axi_emc_native_interface'
+INFO: [Synth 8-802] inferred FSM for state register 'crnt_state_reg' in module 'mem_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                 rd_last |                              001 |                              010
+                      rd |                              010 |                              001
+                      wr |                              011 |                              011
+                 wr_wait |                              100 |                              100
+                 wr_last |                              101 |                              110
+                    resp |                              110 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'emc_addr_ps_reg' using encoding 'sequential' in module 'axi_emc_native_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |                            00000
+             address_set |                            00001 |                            00010
+            deassert_cen |                            00010 |                            00011
+                   write |                            00011 |                            00001
+             dassert_wen |                            00100 |                            00110
+              write_wait |                            00101 |                            01000
+               wait_temp |                            00110 |                            01001
+              assert_cen |                            00111 |                            01011
+          wait_write_ack |                            01000 |                            00111
+           wr_rec_period |                            01001 |                            01010
+            address_rset |                            01010 |                            00100
+           deassert_rcen |                            01011 |                            00101
+    linear_flash_sync_rd |                            01100 |                            01101
+                    read |                            01101 |                            01100
+               page_read |                            01110 |                            01110
+            deassert_oen |                            01111 |                            01111
+         wait_rddata_ack |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'crnt_state_reg' using encoding 'sequential' in module 'mem_state_machine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:01 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 5     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 65    
++---Registers : 
+	               32 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 59    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 24    
+	  17 Input    5 Bit        Muxes := 3     
+	  58 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   3 Input    4 Bit        Muxes := 6     
+	   7 Input    4 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 16    
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 2     
+	  14 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 17    
+	   3 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 143   
+	   7 Input    1 Bit        Muxes := 12    
+	   5 Input    1 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 35    
+	   6 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_axi_emc_0_0 has port s_axi_mem_rresp[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_emc_0_0 has port mem_cre driven by constant 0
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[7].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[6].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[5].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[4].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/IPIC_IF_I/BURST_CNT_RDACK/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[3].READ_COMPLETE_PIPE) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[4].READ_COMPLETE_PIPE) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[5].READ_COMPLETE_PIPE) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[6].READ_COMPLETE_PIPE) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[30].ADDRESS_REG) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[31].ADDRESS_REG) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[1].RDDATA_EN_REG_ASYNC) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[2].RDDATA_EN_REG_ASYNC) is unused and will be removed from module design_1_axi_emc_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_EN_REG_ASYNC) is unused and will be removed from module design_1_axi_emc_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:15 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:30 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:38 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:39 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[7]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[6]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_wen_reg_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_oen_reg_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_cen_reg_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[6]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[7]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[8]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[9]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[10]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[11]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[12]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[13]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[14]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[15]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[16]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[17]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[18]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[19]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[20]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[21]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[22]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[23]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[24]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[25]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[26]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[27]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[28]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[29]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[30]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/mem_a_int_reg[31]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[7]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[6]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[0]  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                   | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[255] | 33     | 33         | 0      | 264     | 132    | 66     | 0      | 
++------------+----------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     3|
+|2     |LUT1     |     7|
+|3     |LUT2     |    75|
+|4     |LUT3     |   107|
+|5     |LUT4     |    50|
+|6     |LUT5     |    98|
+|7     |LUT6     |   194|
+|8     |MULT_AND |    44|
+|9     |MUXCY    |    47|
+|10    |MUXF7    |   132|
+|11    |MUXF8    |    66|
+|12    |SRLC32E  |   264|
+|13    |XORCY    |    56|
+|14    |FDR      |     6|
+|15    |FDRE     |   357|
+|16    |FDSE     |    62|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 83 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:43 . Memory (MB): peak = 1503.797 ; gain = 541.297
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:51 . Memory (MB): peak = 1503.797 ; gain = 646.645
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1503.797 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 354 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[4] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[5] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[6] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_v_reg[7] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_ben_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_ce_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_cen_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[4] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[5] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[6] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_o_reg_reg[7] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[4] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[5] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[6] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_t_reg_reg[7] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_oen_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_qwen_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_rnw_reg_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_rpn_reg_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/EMC_CTRL_I/IO_REGISTERS_I/mem_wen_reg_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[10] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[11] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[12] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[13] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[14] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[15] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[16] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[17] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[18] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[19] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[20] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[21] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[22] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[23] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[24] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[25] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[26] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[27] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[28] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[29] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[30] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[31] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[4] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[5] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[6] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[7] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[8] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance U0/mem_a_int_reg[9] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1503.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 19 instances
+  FDR => FDRE: 6 instances
+  MULT_AND => LUT2: 44 instances
+
+Synth Design complete, checksum: 2db7a793
+INFO: [Common 17-83] Releasing license: Synthesis
+353 Infos, 190 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:02:05 . Memory (MB): peak = 1503.797 ; gain = 1021.039
+INFO: [Common 17-1381] The checkpoint 'E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_axi_emc_0_0_synth_1/design_1_axi_emc_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_emc_0_0, cache-ID = f869a67c32fd7c49
+INFO: [Coretcl 2-1174] Renamed 23 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/VIVADO_2022/CMOD_ARTIX_7/HELLO_WORLD/HELLO_WORLD.runs/design_1_axi_emc_0_0_synth_1/design_1_axi_emc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_emc_0_0_utilization_synth.rpt -pb design_1_axi_emc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  2 14:28:25 2023...
