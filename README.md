@@ -27,6 +27,7 @@ before getting started , make sure you are having the following the below requir
 3. Click Finish
 
    ![3](./3.jpg)
+   ![4](./4.jpg). 
 
 4.click on -- "" create bock design in IP integrator section""
   give a name to this one as well.
